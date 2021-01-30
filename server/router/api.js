@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
-const { service1, service2, service3 } = require('../config/services.js');
+const { service1, service2 } = require('../config/services.js');
 
 const router = Router();
 
@@ -21,16 +21,6 @@ router.use(service2.productsAPI, createProxyMiddleware({
 
 router.use(service2.wishlistAPI, createProxyMiddleware({
   target: service2.url,
-  changeOrigin: true,
-}));
-
-router.use(service3.API, createProxyMiddleware({
-  target: service3.url,
-  changeOrigin: true,
-}));
-
-router.use(service3.reviewsAPI, createProxyMiddleware({
-  target: service3.url,
   changeOrigin: true,
 }));
 

@@ -13,7 +13,6 @@ module.exports = {
   },
   service3: {
     API: '/productreviews',
-    reviewsAPI: '/productreviews/reviews',
     url: 'http://54.187.133.21:3003',
     bundle: 'bundle.js',
   },
