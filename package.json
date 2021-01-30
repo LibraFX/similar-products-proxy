@@ -10,7 +10,8 @@
     "start": "nodemon server",
     "react-dev": "webpack -w",
     "test": "jest",
-    "db:setup": "node database/seedProducts.js && node database/seedWishList.js"
+    "db:setup": "node database/seedProducts.js && node database/seedWishList.js",
+    "docker": "node server"
   },
   "dependencies": {
     "axios": "^0.21.1",

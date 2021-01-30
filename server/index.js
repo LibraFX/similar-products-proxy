@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const router = require('./router/index.js');
 
 // server setup
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = `${__dirname}/../public`;
 const app = express();
 
