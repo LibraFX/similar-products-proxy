@@ -2,7 +2,7 @@ module.exports = {
   service1: {
     getItemsAPI: '/items',
     postItemsAPI: '/items/:styleName',
-    url: 'http://http://ec2-52-53-215-61.us-west-1.compute.amazonaws.com:3001',
+    url: 'http://ec2-52-53-215-61.us-west-1.compute.amazonaws.com:3001',
     bundle: 'bundle.js',
   },
   service2: {
